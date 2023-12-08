@@ -10,4 +10,4 @@ function birthYear(year) {
 }
 }
 
-birthYear(1989);
+birthYear();
