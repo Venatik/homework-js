@@ -1,4 +1,4 @@
-function birthYear(year, species) {
+function ageCalc(year, species) {
     if (species === "dog") {
         let result = (new Date().getFullYear() - year) * 7;
         console.log(`Your dog is ${result} years old in human years!`);
@@ -12,4 +12,6 @@ function birthYear(year, species) {
     }
 }
 
-birthYear(2017, "dog");
+ageCalc(1989, "human");
+
+// Ova resenie mi e malce rigidno posto se strogo definirani species. Ne mi teknuva nekoe pofleksibilno resenie.
