@@ -15,4 +15,4 @@ function ageCalc(year, species) {
 ageCalc(2017, "dog");
 ageCalc(1989, "human");
 
-//Ova resenie mi e malce rigidno ama ne mi teknuva nisto drugo momentalno.
+//Ova resenie mi e malce rigidno ama ne mi teknuva nisto drugo momentalno. Isto ne sum siguren za matematikata, google mi dava povise opcii, ama ja ostaviv kolku za primer.
