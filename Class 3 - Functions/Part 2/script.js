@@ -12,6 +12,4 @@ function ageCalc(year, species) {
     }
 }
 
-ageCalc(1989, "human");
-
-// Ova resenie mi e malce rigidno posto se strogo definirani species. Ne mi teknuva nekoe pofleksibilno resenie.
+birthYear(1989);
