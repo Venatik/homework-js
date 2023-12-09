@@ -12,4 +12,4 @@ function ageCalc(year, species) {
     }
 }
 
-birthYear(1989);
+ageCalc(1989);
