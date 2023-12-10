@@ -1,0 +1,14 @@
+html {
+    font-family: Arial;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    border: 2px dotted whitesmoke;
+    height: 350px;
+}
