@@ -1,0 +1,33 @@
+html {
+    background-color: black;
+    height: 100%;
+    font-family: Arial;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.atm {
+    position: relative;
+}
+
+h1 {
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.atm_image {
+    width: 500px;
+    height: auto;
+}
+
+p {
+    color: white;
+}
