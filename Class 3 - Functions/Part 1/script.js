@@ -7,5 +7,5 @@ typeOf(true);
 typeOf(10);
 typeOf("Hello G7!");
 // Ne sum siguren koe se bara, undefined ili random variabla (vo ovoj slucaj someVariable) koja ne e deklarirana.
-typeOf(undefined);
+typeOf();
 typeOf(someVariable);
