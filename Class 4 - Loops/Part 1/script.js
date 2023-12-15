@@ -6,5 +6,5 @@ function tellStory(array) {
 }
 
 let story = tellStory(storyArray);
-console.log(story);
+alert(story);
 console.log(typeof(story));
