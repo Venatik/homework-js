@@ -8,3 +8,15 @@ function tellStory(array) {
 let story = tellStory(storyArray);
 alert(story);
 console.log(typeof(story));
+
+// Alternattive solution
+
+// let storyArray = ["Stefan", "well-rested", "chilling"];
+
+// function tellStory([name, mood, activity]) {
+//     return(`This is ${name}. ${name} is a nice person. Today ${name} is ${mood}. ${name} is ${activity}. The end.`);
+// }
+
+// let story = tellStory(storyArray);
+// alert(story);
+// console.log(typeof(story));
