@@ -1,14 +1,14 @@
 function Dog(name, breed) {
     this.name = name;
     this.breed = breed;
+
+    this.speak = function() {
+        paragraph.innerHTML = `${this.name} the ${this.breed} says: Woof!`;
+    }
 }
 
 let button = document.getElementById("submit");
 let paragraph = document.getElementById("dogSpeak");
-
-function speak(dog) {
-    paragraph.innerHTML = `${dog.name} the ${dog.breed} says: Woof!`;
-}
 
 button.addEventListener("click", function(event) {
     event.preventDefault();
@@ -17,7 +17,7 @@ button.addEventListener("click", function(event) {
     let dogBreed = document.getElementById("dogBreed").value;
     let newDog = new Dog(dogName, dogBreed);
 
-    speak(newDog);
+    newDog.speak();
 
     document.getElementById("dogName").value = "";
     document.getElementById("dogBreed").value = "";
