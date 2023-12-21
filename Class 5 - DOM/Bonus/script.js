@@ -1,6 +1,5 @@
 let recipeName = prompt("What is the name of the recipe?");
 let ingredientNumber = prompt("How many ingredients are there?"); // Ne e relevantno
-let ingredientContent = prompt("Name every needed ingredient separated by a comma:");
 let ingredientList = document.getElementById("ingredients");
 
 function recipeFinal(name, content) {
@@ -11,13 +10,20 @@ function recipeFinal(name, content) {
     let h3 = document.createElement('h3');
     h3.textContent = "Ingredients:";
     recipeDiv.appendChild(h3);
-    let ingredients = content.split(",");
+    // let ingredients = content.split(",");
     for(let i=0; i < ingredients.length; i++) {
         let li = document.createElement('li');
         li.textContent = ingredients[i].trim();
         ingredientList.appendChild(li);
     }
     recipeDiv.appendChild(ingredientList);
+}
+
+for(let i=0; i < content; i++) {
+    let ingredientContent = prompt(`Name every needed ingredient ${i + 1} `);
+    let li = document.createElement('li');
+    li.textContent = ingredientContent.trim();
+    ingredientList.appendChild(li);
 }
 
 recipeFinal(recipeName, ingredientContent);

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodReads Simulator</title>
+</head>
+<body>
+    <div id="main">
+        <form id="book">
+            <label for="bookTitle">Title</label>
+            <input type="text" name="bookTitle" id="bookTitle">
+            <label for="bookAuthor">Author</label>
+            <input type="text" name="bookAuthor" id="bookAuthor">
+            <br>
+            <label for="bookRead">Have you read the book?</label>
+            <input type="checkbox" name="bookRead" id="bookRead">
+            <br>
+            <label for="bookCurrent">Are you currently reading the book?</label>
+            <input type="checkbox" name="bookCurrent" id="bookCurrent">
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        <p id="bookInfo"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
