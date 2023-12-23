@@ -23,7 +23,7 @@ function addContact() {
         let firstNameCell = document.createElement("td");
         let lastNameCell = document.createElement("td");
         let phoneNumberCell = document.createElement("td");
-        let actionCell = document.createElement("td");
+        let buttonCell = document.createElement("td");
 
         firstNameCell.textContent = firstName;
         lastNameCell.textContent = lastName;
@@ -56,10 +56,10 @@ function addContact() {
         newRow.appendChild(firstNameCell);
         newRow.appendChild(lastNameCell);
         newRow.appendChild(phoneNumberCell);
-        newRow.appendChild(actionCell);
+        newRow.appendChild(buttonCell);
 
-        actionCell.appendChild(editButton);
-        actionCell.appendChild(deleteButton);
+        buttonCell.appendChild(editButton);
+        buttonCell.appendChild(deleteButton);
 
     } else {
         alert("Invalid input! Please enter a valid first name, last name, and phone number.");
