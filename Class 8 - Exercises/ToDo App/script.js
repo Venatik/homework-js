@@ -29,7 +29,11 @@ function renderList() {
         checkbox.type = "checkbox";
         checkbox.addEventListener("change", () => {
             task.isCompleted = checkbox.checked;
-            listItem.classList.toggle("completed", checkbox.checked);
+            if (checkbox.checked) {
+                taskNameSpan.style.textDecoration = "line-through";
+            } else {
+                taskNameSpan.style.textDecoration = "none";
+            }
         });
 
         let taskNameSpan = document.createElement("span");
