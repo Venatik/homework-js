@@ -1,21 +1,6 @@
 let todos = [];
 
-function addTask() {
-    let taskName = document.getElementById("task").value;
-
-    let newTask = {
-        name: taskName,
-        isCompleted: false
-    };
-
-    todos.push(newTask);
-
-    document.getElementById("task").value = "";
-
-    renderList();
-}
-
-function renderList() {
+function createList() {
     let list = document.getElementById("list");
 
     list.innerHTML = "";
@@ -44,6 +29,22 @@ function renderList() {
 
         list.appendChild(listItem);
     });
+}
+
+
+function addTask() {
+    let taskName = document.getElementById("task").value;
+
+    let newTask = {
+        name: taskName,
+        isCompleted: false
+    };
+
+    todos.push(newTask);
+
+    document.getElementById("task").value = "";
+
+    createList();
 }
 
 document.getElementById("btn").addEventListener("click", addTask);

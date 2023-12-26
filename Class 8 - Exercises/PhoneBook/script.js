@@ -29,9 +29,9 @@ function addContact() {
         lastNameCell.textContent = lastName;
         phoneNumberCell.textContent = phoneNumber;
 
-        firstNameCell.style.border = "1px solid black";
-        lastNameCell.style.border = "1px solid black";
-        phoneNumberCell.style.border = "1px solid black";
+        firstNameCell.style.border = "1px solid white";
+        lastNameCell.style.border = "1px solid white";
+        phoneNumberCell.style.border = "1px solid white";
 
         let editButton = document.createElement("button");
         editButton.textContent = "EDIT";
