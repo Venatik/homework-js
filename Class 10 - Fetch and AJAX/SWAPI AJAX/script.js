@@ -11,6 +11,9 @@ $(document).ready(function () {
                 $("#lukeList").append(`<li>Name: ${luke.name}</li>`)
                 $("#lukeList").append(`<li>Height: ${luke.height}cm</li>`)
                 $("#lukeList").append(`<li>Mass: ${luke.mass}kg</li>`)
+            },
+            error: function () {
+                console.log("An error has occured, please try again later.")
             }
         })
     })
