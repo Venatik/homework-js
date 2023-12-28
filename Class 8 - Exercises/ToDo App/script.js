@@ -12,6 +12,7 @@ function createList() {
 
         let checkbox = document.createElement("input");
         checkbox.type = "checkbox";
+        checkbox.checked = task.isCompleted;
         checkbox.addEventListener("change", () => {
             task.isCompleted = checkbox.checked;
             if (checkbox.checked) {
@@ -23,6 +24,9 @@ function createList() {
 
         let taskNameSpan = document.createElement("span");
         taskNameSpan.textContent = task.name;
+        if (task.isCompleted) {
+            taskNameSpan.style.textDecoration = "line-through";
+        }
 
         listItem.appendChild(checkbox);
         listItem.appendChild(taskNameSpan);
