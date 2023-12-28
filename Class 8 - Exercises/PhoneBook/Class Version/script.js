@@ -43,10 +43,26 @@ function renderContacts(table, contactArr) {
         </tr>
     `
 
+    let index = 0;
     for (let contact of contactArr) {
         let row = table.insertRow(-1);
         row.insertCell(0).innerText = contact.firstName;
         row.insertCell(1).innerText = contact.lastName;
         row.insertCell(2).innerText = contact.phoneNumber;
+
+        let actionCell = row.insertCell(3);
+        actionCell.innerHTML = `<button onClick="deleteContact(${index})">Delete</button>`;
+
+        index++;
     }
+}
+
+// function deleteContact(index) {
+//     contacts.splice(index, 1);
+//     renderContacts(table, contacts);
+// }
+
+function deleteContact(index) {
+    contacts.splice(index, 1);
+    renderContacts(table, contacts);
 }
