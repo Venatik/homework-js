@@ -1,0 +1,40 @@
+body {
+  background: rgb(4, 3, 23);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 3, 23, 1) 0%,
+    rgba(9, 67, 121, 1) 35%,
+    rgba(0, 131, 255, 1) 100%
+  );
+}
+
+#chooseGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#chooseHangman,
+#chooseCalculator {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+}
+
+#hangmanLink,
+#calcLink {
+  text-decoration: none;
+  color: whitesmoke;
+}
