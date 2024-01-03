@@ -6,6 +6,7 @@ body {
     rgba(9, 67, 121, 1) 35%,
     rgba(0, 131, 255, 1) 100%
   );
+  font-family: Arial;
 }
 
 #chooseGame {
@@ -43,4 +44,47 @@ h2 {
   color: white;
   text-align: center;
   margin-top: 100px;
+}
+
+td > button {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 3px solid black;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+#resultCalc {
+  width: 200px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#tableDiv {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+#alphabetButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#alphabetButtons > button {
+  margin: 3px;
+  border: 3px solid black;
 }
