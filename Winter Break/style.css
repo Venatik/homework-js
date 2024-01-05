@@ -67,7 +67,7 @@ td > button {
 
 #tableDiv {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: inline-block;
@@ -87,4 +87,51 @@ td > button {
 #alphabetButtons > button {
   margin: 3px;
   border: 3px solid black;
+  background-color: blue;
+  color: white;
+  width: 30px;
+}
+
+#hangmanButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btnHint,
+#btnNewGame {
+  margin: 0 auto;
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+#btnHint {
+  margin-right: 10px;
+}
+
+#btnNewGame {
+  margin-left: 10px;
+}
+
+#hangmanText,
+#hangmanMain {
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+#winLose {
+  font-weight: bolder;
+}
+
+#covece {
+  border: 2px dotted black;
 }

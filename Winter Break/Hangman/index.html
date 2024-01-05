@@ -37,35 +37,55 @@
         </div>
     </nav>
 
+    <div id="hangmanText">
+        <h1>JavaScript Hangman Game</h1>
+        <p>Use the letters below to guess the word or click Hint to get a clue!</p>
+    </div>
+
     <div id="hangmanDiv">
         <div id="alphabetButtons">
-            <button class="btn btn-primary">A</button>
-            <button class="btn btn-primary">B</button>
-            <button class="btn btn-primary">C</button>
-            <button class="btn btn-primary">D</button>
-            <button class="btn btn-primary">E</button>
-            <button class="btn btn-primary">F</button>
-            <button class="btn btn-primary">G</button>
-            <button class="btn btn-primary">H</button>
-            <button class="btn btn-primary">I</button>
-            <button class="btn btn-primary">J</button>
-            <button class="btn btn-primary">K</button>
-            <button class="btn btn-primary">L</button>
-            <button class="btn btn-primary">M</button>
-            <button class="btn btn-primary">N</button>
-            <button class="btn btn-primary">O</button>
-            <button class="btn btn-primary">P</button>
-            <button class="btn btn-primary">Q</button>
-            <button class="btn btn-primary">R</button>
-            <button class="btn btn-primary">S</button>
-            <button class="btn btn-primary">T</button>
-            <button class="btn btn-primary">U</button>
-            <button class="btn btn-primary">V</button>
-            <button class="btn btn-primary">W</button>
-            <button class="btn btn-primary">X</button>
-            <button class="btn btn-primary">Y</button>
-            <button class="btn btn-primary">Z</button>
+            <button class="btnLetter">A</button>
+            <button class="btnLetter">B</button>
+            <button class="btnLetter">C</button>
+            <button class="btnLetter">D</button>
+            <button class="btnLetter">E</button>
+            <button class="btnLetter">F</button>
+            <button class="btnLetter">G</button>
+            <button class="btnLetter">H</button>
+            <button class="btnLetter">I</button>
+            <button class="btnLetter">J</button>
+            <button class="btnLetter">K</button>
+            <button class="btnLetter">L</button>
+            <button class="btnLetter">M</button>
+            <button class="btnLetter">N</button>
+            <button class="btnLetter">O</button>
+            <button class="btnLetter">P</button>
+            <button class="btnLetter">Q</button>
+            <button class="btnLetter">R</button>
+            <button class="btnLetter">S</button>
+            <button class="btnLetter">T</button>
+            <button class="btnLetter">U</button>
+            <button class="btnLetter">V</button>
+            <button class="btnLetter">W</button>
+            <button class="btnLetter">X</button>
+            <button class="btnLetter">Y</button>
+            <button class="btnLetter">Z</button>
         </div>
+    </div>
+
+    <div id="hangmanMain">
+        <p id="chosenCategory">The chosen category is </p>
+        <br>
+        <p id="lives">Remaining Lives: </p>
+        <br>
+        <p id="hangmanHint">Hint</p>
+        <br>
+        <canvas id="covece" width="200" height="200"></canvas>
+        <p id="winLose"></p>
+    </div>
+    <div id="hangmanButtons">
+        <button id="btnHint">Hint</button>
+        <button id="btnNewGame">New Game</button>
     </div>
 
     </div>
