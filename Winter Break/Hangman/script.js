@@ -109,7 +109,7 @@ function requestHint() {
         "The Dark Knight": "The best Batman movie"
     };
     if (selectedWord && selectedWord.word && hints && hints[selectedWord.word]) {
-        const hint = hints[selectedWord.word];
+        let hint = hints[selectedWord.word];
         document.getElementById("hangmanHint").textContent = hint;
     } else {
         alert('Hint or selected word is not defined');
