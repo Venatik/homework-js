@@ -53,7 +53,7 @@ for (let i = 0; i < selectedWord.word.length; i++) {
 
 function updateUI() {
     const chosenCategoryParagraph = document.getElementById("chosenCategory");
-    chosenCategoryParagraph.textContent = `The chosen category is ${selectedWord.categoryName} and the word is: ${guesses.join(" ")}`;
+    chosenCategoryParagraph.textContent = `The chosen category is ${selectedWord.categoryName} and the word is: ${guesses.join("")}`;
 }
 
 function handleGuess(letter, button) {
